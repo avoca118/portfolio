@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>May Nyein Chan | Portfolio</title>
+  <link rel="icon" type="image/jpeg" href="img/icon.jpg" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="brand__name">May Nyein Chan</div>
+        <div class="brand__title">Student | Aspiring Technologist &amp; Web Developer</div>
+      </div>
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-toggle__icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="container hero__content">
+        <div>
+          <p class="eyebrow">Myanmar • Scholarship &amp; Academic Portfolio</p>
+          <h1 class="hero__title">May Nyein Chan</h1>
+          <p class="hero__subtitle">Student | Aspiring Technologist &amp; Web Developer</p>
+          <p class="hero__focus">Focused on technology and web development with readiness for international academic opportunities.</p>
+          <div class="hero__actions">
+            <a class="button primary" href="#education">View Education &amp; Scores</a>
+            <a class="button ghost" href="#projects">See Portfolio</a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <img src="img/img.jpg" alt="Photo of May Nyein Chan">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section--muted">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">About</p>
+          <h2>Professional Profile</h2>
+          <p class="section__lede">Brief overview of readiness for academic review and scholarship consideration.</p>
+        </div>
+        <div class="section__body">
+          <p>I am a motivated student from Myanmar with a strong academic background in mathematics and technology. I have completed international standardized tests, programming coursework, and professional web development training. I am seeking scholarship opportunities to pursue higher education in technology-related fields.</p>
+          <div class="info-grid">
+            <div>
+              <div class="label">Full Name</div>
+              <div class="value">May Nyein Chan</div>
+            </div>
+            <div>
+              <div class="label">Profile Title</div>
+              <div class="value">Student | Aspiring Technologist &amp; Web Developer</div>
+            </div>
+            <div>
+              <div class="label">Preferred Name</div>
+              <div class="value">Chan</div>
+            </div>
+            <div>
+              <div class="label">Nationality</div>
+              <div class="value">Myanmar</div>
+            </div>
+            <div>
+              <div class="label">Academic Interest</div>
+              <div class="value">Full-stack Web Development</div>
+            </div>
+            <div>
+              <div class="label">Focus</div>
+              <div class="value">Technology, Web Development</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Education &amp; Test Scores</p>
+          <h2>Academic Results</h2>
+          <p class="section__lede">Completed standardized tests and foundational coursework.</p>
+        </div>
+
+        <div class="card-grid card-grid--education">
+          <article class="card">
+            <div class="card__header">
+              <div>
+                <h3>GED</h3>
+                <p class="muted">Completed 2024</p>
+              </div>
+            </div>
+            <div class="table-like">
+              <div class="row">
+                <span>Mathematics</span>
+                <span class="score">198</span>
+              </div>
+              <div class="row">
+                <span>Science</span>
+                <span class="score">181</span>
+              </div>
+              <div class="row">
+                <span>Social Studies</span>
+                <span class="score">178</span>
+              </div>
+              <div class="row">
+                <span>Reasoning Through Language Arts (RLA)</span>
+                <span class="score">166</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <div>
+                <h3>SAT</h3>
+                <p class="muted">Completed 2025</p>
+              </div>
+            </div>
+            <div class="table-like">
+              <div class="row">
+                <span>Evidence-Based Reading &amp; Writing</span>
+                <span class="score">610</span>
+              </div>
+              <div class="row">
+                <span>Mathematics</span>
+                <span class="score">790</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <div>
+                <h3>Duolingo English Test</h3>
+                <p class="muted">Completed 2025</p>
+              </div>
+            </div>
+            <div class="table-like">
+              <div class="row">
+                <span>Speaking</span>
+                <span class="score">90</span>
+              </div>
+              <div class="row">
+                <span>Writing</span>
+                <span class="score">125</span>
+              </div>
+              <div class="row">
+                <span>Reading</span>
+                <span class="score">115</span>
+              </div>
+              <div class="row">
+                <span>Listening</span>
+                <span class="score">110</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="card-grid two">
+          <article class="card">
+            <div class="card__header">
+              <div>
+                <h3>CS50 Python</h3>
+                <p class="muted">Completed 2025</p>
+              </div>
+            </div>
+            <p>Completed foundational Python programming with problem-solving and algorithm practice.</p>
+          </article>
+          <article class="card">
+            <div class="card__header">
+              <div>
+                <h3>Professional Web Development Course</h3>
+                <p class="muted">Completed</p>
+              </div>
+            </div>
+            <p>Mastered full-stack development by engineering responsive interfaces and secure, MVC-architected web applications using PHP, Laravel, and MySQL.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--muted">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Skills</p>
+          <h2>Competencies</h2>
+          <p class="section__lede">Technical and collaborative capabilities for academic and project work.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Technical Skills</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Python, PHP, Laravel</li>
+              <li>Bootstrap, Laravel, Django</li>
+              <li>MySQL, Git</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Other Skills</h3>
+            <ul>
+              <li>Social Media Marketing & Management</li>
+              <li>Content Posting &amp; Page Administration</li>
+              <li>Team Collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Experience</p>
+          <h2>Practical Involvement</h2>
+          <p class="section__lede">Contributions through volunteer and administrative roles.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__date">7 months</div>
+            <div class="timeline__body">
+              <h3>Volunteer — Social &amp; Marketing Team Member</h3>
+              <p class="muted">Responsibilities: content support, social media assistance, teamwork</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__date">2 months</div>
+            <div class="timeline__body">
+              <h3>Facebook Page Post Admin</h3>
+              <p class="muted">Responsibilities: posting, page management, content scheduling</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section--muted">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Projects / Portfolio</p>
+          <h2>Featured Projects</h2>
+          <p class="section__lede">A showcase of my key projects highlighting design, development, and technical skills across front-end and full-stack applications.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card project">
+            <div class="card__header">
+              <h3>Coffee Shop Website</h3>
+              <p class="muted">Front-end • Responsive design</p>
+            </div>
+            <p>Modern, responsive coffee shop website focused on clean UI, soft color palette, and user-friendly layout across devices.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>Tailwind CSS</span>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="card__header">
+              <h3>Article Management Platform</h3>
+              <p class="muted">Full-stack • Web application</p>
+            </div>
+            <p>A Laravel-based web application that allows users to create, upload, edit, and manage articles with secure authentication and structured content handling.</p>
+            <div class="tags">
+              <span>Laravel</span><span>PHP</span><span>MySQL</span>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="card__header">
+              <h3>LuxeCarry Fashion Website</h3>
+              <p class="muted">Front-end • User Interface</p>
+            </div>
+            <p>Elegant product-focused website designed with interactive cards, hover overlays, and a clean visual hierarchy.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>UI Design</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container two-col">
+        <div class="section__header">
+          <p class="eyebrow">Contact</p>
+          <h2>Contact &amp; Profiles</h2>
+          <p class="section__lede">Use the email below for scholarship, academic, or collaboration inquiries. Profiles are provided for technical review.</p>
+        </div>
+        <div class="section__body contact-layout">
+          <div class="contact-card">
+            <div class="label">Email</div>
+            <a class="contact-link" href="mailto:mnc.mtht@gmail.com">mnc.mtht@gmail.com</a>
+            <p class="muted">Primary contact for opportunities, applications, and project discussions.</p>
+
+            <div class="contact-meta">
+              <div class="label">GitHub</div>
+              <a class="contact-link" href="https://github.com/avoca118" target="_blank" rel="noopener noreferrer">
+                github.com/avoca118
+              </a>
+            </div>
+
+            <div class="contact-meta">
+              <div class="label">LinkedIn</div>
+              <a class="contact-link" href="https://www.linkedin.com/in/mnchan-dev" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/mnchan-dev
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>May Nyein Chan • Academic &amp; Technical Portfolio</p>
+      <p class="muted">Focused on clarity, credibility, and readiness for scholarship review.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

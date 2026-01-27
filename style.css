@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300..900&display=swap');
-
 * {
     box-sizing: border-box;
 }
@@ -48,11 +46,18 @@ body {
 }
 
 .text-container a {
-    all: unset;
+    text-decoration: none;
+    color: inherit;
     margin-right: 12px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    display: inline-block;
+}
+
+.text-container a:focus-visible {
+    outline: 3px solid rgba(13,110,253,0.12);
+    outline-offset: 3px;
 }
 
 .text-container .view-edu{
@@ -71,6 +76,22 @@ body {
     border: 1px solid rgb(255, 254, 254);
 }
 
+.view-container {
+    gap: 0.75rem;
+}
+
+/* Remove underline for links inside contact area while keeping focus outlines */
+.contact-profile a,
+.contact-areas a {
+    text-decoration: none;
+}
+
+.contact-profile a:focus-visible,
+.contact-areas a:focus-visible {
+    outline: 3px solid rgba(13,110,253,0.12);
+    outline-offset: 3px;
+}
+
 .img-container {
     display: flex;
     justify-content: flex-end;
@@ -80,6 +101,11 @@ body {
     width: 350px;
     border-radius: 20px;
     border: 2px solid rgb(227, 230, 236);
+}
+
+.mnc-photo {
+    max-width: 100%;
+    height: auto;
 }
 
 .about-section, 
@@ -241,9 +267,6 @@ body {
 }
 
 @media (max-width: 992px) {
-    .a-container {
-        display: none;
-    }
     .project-info {
         margin-bottom: 20px;
         min-height: 170px;

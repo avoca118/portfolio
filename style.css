@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.nav-container a:hover {
+    background-color: rgb(227, 230, 236);
+}
+
+.intro-section {
+    display: flex;
+    min-height: 650px;
+    align-items: center;
+    color: #e4e7eb;
+    background-color: rgb(52, 67, 85);
+}
+
+.light {
+    color: #5a5e68;
+}
+
+.sec-intro-section {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.text-container {
+    max-width: 600px;
+}
+
+.text-container a {
+    all: unset;
+    margin-right: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.text-container .view-edu{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-container .view-edu:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-container .view-proj {
+    border: 1px solid rgb(179, 179, 179);
+}
+.text-container .view-proj:hover {
+    border: 1px solid rgb(255, 254, 254);
+}
+
+.img-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mnc-photo {
+    width: 350px;
+    border-radius: 20px;
+    border: 2px solid rgb(227, 230, 236);
+}
+
+.about-section, 
+.education-section, 
+.skill-section,
+.experience-section,
+.projects-section,
+.contact-section {
+    max-width: 1100px;
+}
+
+.about-text {
+    border-radius: 20px;
+}
+
+.info-about {
+    font-weight: 100;
+}
+
+.info-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.education-card {
+    min-height: 380px;
+    border-radius: 20px;
+    border: 1px solid rgb(227, 230, 236);
+}
+
+.score-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.score-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(227, 230, 236);
+    font-weight: 500;
+}
+
+.education-card2 {
+    min-height: 200px;
+    border-radius: 20px;
+}
+
+.skill-container {
+    border-radius: 20px;
+}
+
+.experience-section .volunteer-container {
+    display: flex;
+    gap: 70px;
+    border: 1px solid rgb(227, 230, 236);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.project-info {
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 330px;
+}
+
+.coffee-heading {
+    display: flex;
+    gap: 20px;
+}
+
+.tech-skills {
+    background-color: rgb(239, 241, 244);
+    border: 1px solid rgb(227, 230, 236);
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+.contact-areas {
+    border: 1px solid rgb(227, 230, 236);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contact-profile {
+    background-color: rgb(239, 241, 244);
+    border-radius: 20px;
+}
+
+@media (max-width: 397px) {
+    .coffee-heading {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .coffee-heading h5 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .coffee-heading p {
+        font-size: 0.85rem;
+        margin: 0;
+    }
+
+    .project-info {
+        padding: 14px;
+        min-height: auto;
+    }
+
+    .tech-skills {
+        display: inline-block;
+        margin-bottom: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-intro-section {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .img-container {
+        justify-content: center;
+    }
+
+    .mnc-photo {
+        width: 250px;
+    }
+
+    .view-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experience-section .volunteer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-info {
+        margin-bottom: 20px;
+        min-height: 170px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .education-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .a-container {
+        display: none;
+    }
+    .project-info {
+        margin-bottom: 20px;
+        min-height: 170px;
+    }
+}
+
+@media (max-width: 1067px) {
+    .project-info {
+        margin-bottom: 20px;
+        min-height: 170px;
+    }
+}

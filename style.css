@@ -162,6 +162,20 @@ body {
     border-radius: 20px;
 }
 
+.skill-section .row > [class*="col-"] {
+    display: flex;
+}
+
+.skill-section .skill-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skill-section .skill-container .card-body {
+    flex: 1 1 auto;
+}
+
 .experience-section .volunteer-container {
     display: flex;
     gap: 70px;
@@ -270,6 +284,20 @@ body {
     .project-info {
         margin-bottom: 20px;
         min-height: 170px;
+    }
+    .skill-container {
+        min-height: 260px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill-container {
+        min-height: auto;
+    }
+
+    .skill-section .skill-container .card-body {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
